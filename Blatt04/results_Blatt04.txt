@@ -1,0 +1,89 @@
+Hachem,  07.06.2022, 00:32:46, a3fd0db0d7ace261c1ec1eb0cfff076bc86476c6
+Korrektur Blatt 4
+
+Aufgabe 3.1
+	Setzt Board Constructor board.n für n = 1, ..., 10 korrekt?: 2/2
+	Liefert nach doMove() und undoMove() die Methode getField() das Erwartete?: 8/8
+	Liefert getField() für alle Positionen den von setField() gesetzten Wert?: 5/5
+	Lösen ungültige Positionen bei getField() eine Exception aus?: 2/2
+	Gibt isGameWon() in unterschiedlichen Spielsituationen das erwartete Ergebnis?: 8/8
+	Lösen ungültige Token-Werte bei setField() eine Exception aus?: 1/1
+	Lösen ungültige Positionen bei setField() eine Exception aus?: 2/2
+	Liefert validMoves() in unterschiedlichen Spielsituationen das erwartete Ergebnis?: 8/8
+	Gibt Methode nFreeFields() für unterschiedliche Brettgrößen die richtige Antwort?: 0/4
+	  java.lang.AssertionError: nFreeFields sollte nach dem Setzen eines Steins verringert werden. Für nFreeFields ist expected [8] but found [0]
+Total points for Aufgabe 3.1: 36/40
+
+Aufgabe 3.2
+	Liefert alphaBeta() in komplexen Stellungen die erwartete Bewertung?: 0/20
+	  java.lang.AssertionError: Bei der Spielsituation
+x..
+...
+...
+wird Bewertung 4 erwartet. expected [4] but found [0]
+	Liefert alphaBeta() in direkten Verluststellungen die erwartete Bewertung?: 0/10
+	  java.lang.AssertionError: Bei der Spielsituation
+x.x
+ox.
+..o
+wird Bewertung -3 erwartet. expected [-3] but found [0]
+	Liefert alphaBeta() in regellosen Anfangsstellungen die erwartete Bewertung?: 0/3
+	  java.lang.AssertionError: Bei der Spielsituation
+xx..
+x...
+....
+....
+wird Bewertung 5 erwartet. expected [5] but found [0]
+	Liefert alphaBeta() in komplexen Stellungen die erwartete Bewertung?: 0/7
+	  java.lang.AssertionError: Bei der Spielsituation
+..
+..
+wird Bewertung 2 erwartet. expected [2] but found [0]
+	Liefert alphaBeta() in direkten Gewinnstellungen die erwartete Bewertung?: 0/10
+	  java.lang.AssertionError: Bei der Spielsituation
+x.x
+ox.
+o.o
+wird Bewertung 3 erwartet. expected [3] but found [0]
+Total points for Aufgabe 3.2: 0/50
+
+Aufgabe 3.3
+	Gibt evaluatePossibleMoves() in unterschiedlichen Spielsituationen das erwartete Ausgabe?: 0/3
+	  java.lang.AssertionError: Auf die Eingabe
+.o.
+...
+..x
+wird folgende Ausgabe erwartet:
+
+Evaluation for player 'x':
+  0  o  3
+  0  3 -2
+  3  0  x
+
+aber es kam:
+
+0 0 0 
+o 0 0 
+0 0 x 
+
+	Gibt evaluatePossibleMoves() in unterschiedlichen Spielsituationen das erwartete Ausgabe?: 0/7
+	  java.lang.AssertionError: Auf die Eingabe
+.o.
+...
+..x
+wird folgende Ausgabe erwartet:
+
+Evaluation for player 'x':
+  0  o  3
+  0  3 -2
+  3  0  x
+
+aber es kam:
+
+0 0 0 
+o 0 0 
+0 0 x 
+
+Total points for Aufgabe 3.3: 0/10
+
+Total points: 36/100
